@@ -1,6 +1,5 @@
-import { db } from "@/server/db";
-import { revalidatePath } from "next/cache";
-import { auth } from "@/server/auth"; // Import your auth helper
+import { db } from "../server/db";
+import { auth } from "../server/auth"; // Import your auth helper
 
 export default async function HomePage() {
   const session = await auth(); // Get the current logged-in user
